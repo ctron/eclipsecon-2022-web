@@ -1,0 +1,23 @@
+quarkus:
+  oidc:
+    auth-server-url: http://localhost:8081/realms/eclipsecon
+
+  http:
+    cors: true
+
+  keycloak:
+    devservices:
+      enabled: false
+
+  datasource:
+    db-kind: postgresql
+    username: admin
+    password: admin123456
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/eclipsecon
+
+
+  hibernate-orm:
+    database:
+      generation: update
+
