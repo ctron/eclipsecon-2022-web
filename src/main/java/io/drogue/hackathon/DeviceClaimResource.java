@@ -55,9 +55,7 @@ public class DeviceClaimResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Boolean releaseDevice(@QueryParam("deviceId") final String deviceId) {
         var result =  this.service.releaseDevice(deviceId, this.jwt.getSubject());
-
         logger.info("Released device '{}' => {}", deviceId, result);
-
         return result;
     }
 }

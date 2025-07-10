@@ -16,8 +16,6 @@ quarkus:
     jdbc:
       url: jdbc:postgresql://localhost:5432/eclipsecon
 
-
   hibernate-orm:
     database:
       generation: update
-
